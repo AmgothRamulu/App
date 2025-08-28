@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>sairam cooking – A RAMULU 9347202638 – Full Material List</title>
+  <style>
+    :root{
+      --bg:#fbfbff;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --brand:#7c3aed;
+      --brand-2:#a78bfa;
+      --accent:#eef2ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,var(--bg),#f6f7ff);
+      color:var(--text);
+      padding:22px;
+    }
+    .container{max-width:1200px;margin:0 auto;}
+    header{
+      background:linear-gradient(135deg,var(--brand),var(--brand-2));
+      color:#fff;
+      padding:22px;
+      border-radius:14px;
+      box-shadow:0 10px 30px rgba(124,58,237,.12);
+    }
+    header h1{margin:0;font-weight:600;font-size:clamp(20px,3.4vw,32px);letter-spacing:.2px}
+    header p{margin:6px 0 0;color:rgba(255,255,255,.9);font-size:13px}
+    .card{background:var(--card);border-radius:12px;padding:14px;margin-top:18px;box-shadow:0 6px 18px rgba(15,23,42,.04)}
+    .section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+    .section-head h2{margin:0;color:var(--brand);font-size:16px}
+    table{width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden}
+    thead th{
+      background:var(--accent);
+      padding:10px 12px;
+      font-weight:700;
+      text-align:left;
+      border-bottom:1px solid #e6edf8;
+    }
+    tbody td{padding:10px 12px;border-bottom:1px solid #f3f6fb;vertical-align:middle}
+    tbody tr:nth-child(odd){background:#fcfcff}
+    tbody tr:hover{background:#fbf9ff}
+    input[type="text"], input[type="date"]{
+      width:100%;
+      padding:8px 10px;
+      border:1px solid #e6e9f2;
+      border-radius:6px;
+      font-size:14px;
+    }
+    .actions{display:flex;gap:12px;align-items:center;margin:16px 0}
+    button{
+      background:var(--brand);
+      color:white;
+      border:none;
+      padding:10px 14px;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:600;
+      box-shadow:0 6px 18px rgba(124,58,237,.12);
+    }
+    button.secondary{
+      background:#f3f4f6;
+      color:var(--text);
+      box-shadow:none;
+      border:1px solid #e7e9f2;
+    }
+    .note{font-size:13px;color:var(--muted);margin-top:6px}
+    footer{margin:24px 0 40px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:720px){
+      thead th:nth-child(1),tbody td:nth-child(1){width:48px}
+    }
+    .top-fields{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .top-fields div{flex:1;min-width:200px}
+    label{font-size:13px;color:rgba(255,255,255,.9);display:block;margin-bottom:4px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>sairam cooking : <span style="font-weight:400">     Chef -   A RAMULU 9347202638</span></h1>
+      <p>Full combined material list — Kirana, Vegetables, Fruits, Special Milk & Tent House (enter quantities and click "Show Selected")</p>
+
+      <!-- NEW Top fields -->
+      <div class="top-fields">
+        <div>
+          <label for="eventDate">Event Date</label>
+          <input type="date" id="eventDate" />
+        </div>
+        <div>
+          <label for="msg1">Message 1</label>
+          <input type="text" id="msg1" placeholder="Enter a custom message" value="Cooking Charges : " />
+        </div>
+        <div>
+          <label for="msg2">Message 2</label>
+          <input type="text" id="msg2" placeholder="Enter another message" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Kirana -->
+    <section class="card" id="section-kirana">
+      <div class="section-head">
+        <h2>Kirana Items</h2>
+        <div class="note">Enter quantity (e.g. 2kg, 500g, 1 pkt)</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th style="width:64px">S.No</th><th>Material</th><th style="width:180px">Quantity</th></tr>
+        </thead>
+        <tbody id="kirana"></tbody>
+      </table>
+    </section>
+
+    <!-- Vegetables -->
+    <section class="card" id="section-vegetables">
+      <div class="section-head">
+        <h2>Vegetables</h2>
+        <div class="note">Enter quantity (e.g. 5kg, 2 bunches)</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th style="width:64px">S.No</th><th>Material</th><th style="width:180px">Quantity</th></tr>
+        </thead>
+        <tbody id="vegetables"></tbody>
+      </table>
+    </section>
+
+    <!-- Fruits -->
+    <section class="card" id="section-fruits">
+      <div class="section-head">
+        <h2>Fruits</h2>
+        <div class="note">Enter quantity (e.g. 12 pcs, 2 dozen)</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th style="width:64px">S.No</th><th>Material</th><th style="width:180px">Quantity</th></tr>
+        </thead>
+        <tbody id="fruits"></tbody>
+      </table>
+    </section>
+
+    <!-- Milk -->
+    <section class="card" id="section-milk">
+      <div class="section-head">
+        <h2>Dairy Items</h2>
+        <div class="note">Enter quantity (e.g. 1kg, 500ml)</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th style="width:64px">S.No</th><th>Material</th><th style="width:180px">Quantity</th></tr>
+        </thead>
+        <tbody id="milk"></tbody>
+      </table>
+    </section>
+
+    <!-- Tent House -->
+    <section class="card" id="section-tent">
+      <div class="section-head">
+        <h2>Tent House Items</h2>
+        <div class="note">Enter quantity or count (e.g. 2, 10 nos)</div>
+      </div>
+      <table>
+        <thead>
+          <tr><th style="width:64px">S.No</th><th>Material</th><th style="width:180px">Quantity</th></tr>
+        </thead>
+        <tbody id="tent"></tbody>
+      </table>
+    </section>
+
+    <div class="actions">
+      <button onclick="openSelectedPage()">Show Selected Items in New Page</button>
+      <button class="secondary" onclick="copySelectedToClipboard()">Copy Selected to Clipboard</button>
+      <div style="flex:1"></div>
+      <div class="note">Only rows with a non-empty Quantity will be shown on the new page / copied.</div>
+    </div>
+
+    <footer>© sairam cooking</footer>
+  </div>
+
+  <script>
+   const kiranaItems = [ "Basmathi Rice", "Sonamasoori Rice", "Mutton", "Chicken", "Prawns", "Fish", "Eggs", "Crabs", "Ginger Garlic Paste", "Chintapandu", "Mirchi Powder", "3 Mango Mirchi Powder", "Pasupu", "Daniya Powder", "Zeera Powder", "Amchur Powder", "Oil", "Ghee", "Dalda", "Jelacara", "Avalu", "Menthulu", "Dry Mirchi", "Bagara Patta", "Bojwari Puvu", "Kasuri Methi", "Jungali Elaichi", "Jajikaya", "Japatri", "Testing Salt", "Lemon Salt", "Kandi Pappu", "Chanaga Pappu", "Minapa Pappu", "Pesara Pappu", "Sambar Powder", "Ingva", "Rasam Powder", "Small Salt", "Big Salt", "Black Salt", "Eating Soda", "Voma", "Besan Atta", "Rice Atta", "Corn Flour", "Custard Powder", "Sabhudana", "Maida Atta", "Bombai Atta", "Aashirvad atta", "Silver Foil", "Bombai Rawa", "Mota Rawa", "Sajeera", "Dalchin Chakka", "Elaichi", "Lavang", "Black Pepper", "Kali Mirchi", "Kabab Chinni", "White Pepper", "Black Pepper Powder", "Coconut Powder", "Nalla Kudkalu", "Phalli", "Til", "Kaju", "Kaju Goal", "Kaju 2 pic", "Watermelon Seeds", "Badam", "Pista", "Kismis", "Charonji", "Red Cherry", "Green Cherry", "Yellow Cherry", "Pineapple Tin", "Milk Made", "Sugar", "Bellam", "Honey", "Mutton Masala", "Chicken Masala", "Fish Masala", "Chaat Masala", "Tandoori Masala", "Paneer Masala", "Chole Masala", "Avala Podi", "Garam Masala", "Tomato Sauce", "Vinegar", "Green Chilli Sauce", "Red Chilli Sauce", "Yellow Capsicum Chilli Sauce", "Green Capsicum Chilli Sauce", "Red Capsicum Chilli Sauce", "Soya Sauce", "8 to 8 Sauce", "Sarad Oil", "Mustard Oil", "Bread Roast Powder", "Bambino", "Sanna Samya", "Barik Pani", "Red Bush Colour", "Orange Red Colour", "999 Kesari Colour", "Green Colour", "Jalebi Colour", "Chole", "Gulab Kali", "Kurbani Anjeer", "Milk Powder", "Star Puvu", "Dry Anjeer", "Strawberry Crush", "Pineapple Crush", "Amul Cream", "Amul Cheese", "Putnala Papu", "Mushroom", "Badam Powder", "Tea Powder", "Coffee Powder", "Kumkum Puvu", "Natraj Warag", "Baking Powder", "Match Box", "Onion", "Papad Fries", "Agarbatti", "Tenkaya (Coconut)", "Kumkuma","Surf", " Handwash soap" ];
+   const vegetables = [ "Pachi Mirchi", "Moti Mirchi", "Capsicum", "Tomato", "Potato", "Beans", "Carrot", "Keera", "Lemon", "Beetroot", "Cabbage", "Cauliflower", "Dondakaya", "Dosakaya", "Brinjal", "Kaddu", "Drumsticks", "Palakura", "Gongura", "Chukka Kura", "Kothmir", "Pudina", "Karivepaku","Soya Kura", "Ulli Akku", "Tamalapaku", "Aratikayalu", "Pachi Batani", "Mangoes", "Beerakayalu", "Papaya", "Bendi", "Gangavayilu Kura", "Menthi Kura", "Green Batani" ];
+   const fruits = [ "Banana","Apple","Pineapple","Mango","Anar","Sapota","Papaya","Grapes (White & Black)","Draksha", "Danima", "Orange","Mosambi" ];
+   const milkItems = [ "Kova", "Paneer", "Malai", "Milk", "Curd", "Butter", "Bread", "Soft Bread", "Peni" ];
+   const tentItems = [ "60kg Deksha", "50kg Deksha", "40kg Deksha", "60kg Lagan", "50kg Lagan", "40kg Lagan", "30kg Lagan", "20kg Lagan", "10kg Lagan", "50kg Bagona", "40kg Bagona", "30kg Bagona", "20kg Bagona", "10kg Bagona", "5kg Bagona", "Kadai", "Jara", "Kabgir", "Kurfi", "Double Stove", "Single Stove", "Pasav Gampalu", "Basan"," Bucket", "Table"," Jug", "Carpet", "Stick Stand", "Drum", "Dora", "Idly Box", "Ice", "Grinder" ,"Gas", "Sticks", "Coal", "Mixer", "Cloth","Papper Plates","Tiffin Plates", " Water Glass", "Juice glass", "Table Cover", "Waste cover", "spung", "Sweet cups", "Spoons", "Gundu Sudhi", "Toothpicks", "Chicken Sticks", "Tea glass","Pitanbaram"];
+    function renderSection(list, tbodyId){
+      const tbody = document.getElementById(tbodyId);
+      list.forEach((name, i) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${i+1}</td>
+          <td class="mat-name">${escapeHtml(name)}</td>
+          <td><input type="text" placeholder="gm/kg" data-material="${escapeHtml(name)}" /></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function escapeHtml(str){
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    renderSection(kiranaItems, "kirana");
+    renderSection(vegetables, "vegetables");
+    renderSection(fruits, "fruits");
+    renderSection(milkItems, "milk");
+    renderSection(tentItems, "tent");
+
+    function openSelectedPage(){
+      const inputs = Array.from(document.querySelectorAll("tbody input"));
+      const selected = [];
+
+      // collect top fields
+      const eventDate = document.getElementById("eventDate").value;
+      const msg1 = document.getElementById("msg1").value;
+      const msg2 = document.getElementById("msg2").value;
+
+      function findCategoryForInput(input){
+        let el = input.closest("section.card");
+        if(!el) return "Other";
+        const h2 = el.querySelector("h2");
+        return h2 ? h2.innerText.trim() : "Other";
+      }
+
+      inputs.forEach(input => {
+        const val = input.value.trim();
+        if(val !== ""){
+          const material = input.getAttribute("data-material") || (input.closest("tr")?.querySelector(".mat-name")?.innerText ?? "");
+          const category = findCategoryForInput(input);
+          selected.push({ category, material, qty: val });
+        }
+      });
+
+      if(selected.length === 0){
+        alert("No items with quantity entered!");
+        return;
+      }
+
+      const grouped = {};
+      selected.forEach(item => {
+        if(!grouped[item.category]) grouped[item.category] = [];
+        grouped[item.category].push(item);
+      });
+
+      let rowsHtml = "";
+      Object.keys(grouped).forEach(sectionName => {
+        rowsHtml += `<tr><td colspan="3" style="background:#f6f7ff;font-weight:700;padding:10px;border:1px solid #e6edf8">${escapeHtml(sectionName)}</td></tr>`;
+        grouped[sectionName].forEach((it, idx) => {
+          rowsHtml += `<tr><td style="width:64px;padding:8px;border:1px solid #eaeef8">${idx+1}</td><td style="padding:8px;border:1px solid #eaeef8">${escapeHtml(it.material)}</td><td style="padding:8px;border:1px solid #eaeef8">${escapeHtml(it.qty)}</td></tr>`;
+        });
+      });
+
+      const newWin = window.open("", "_blank");
+      newWin.document.write(`
+        <!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+          <title>Selected Items - sairam cooking</title>
+          <meta name="viewport" content="width=device-width,initial-scale=1"/>
+          <style>
+            body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:20px; color:#1f2937; background:#fbfbff}
+            header{padding:14px 0}
+            h1{margin:0;color:#7c3aed;font-size:20px}
+            table{width:100%;border-collapse:collapse;margin-top:16px;box-shadow:0 6px 18px rgba(15,23,42,.04)}
+            th,td{padding:10px;border:1px solid #e6edf8;text-align:left}
+            th{background:#eef2ff;font-weight:700}
+            .controls{margin-top:12px}
+            button{background:#7c3aed;color:#fff;padding:8px 12px;border-radius:8px;border:none;cursor:pointer;font-weight:600}
+          </style>
+        </head>
+        <body>
+          <header>
+          <h1>sairam cooking : Chef - A RAMULU 9347202638<h1> <br>
+          <h2>Full combined material list — Kirana, Vegetables, Fruits, Dairy & Tent House </h2>
+
+            <h1>Selected Items with Quantity</h1>
+            
+            <div style="margin:6px 0 0;color:#444;font-size:14px">
+              ${eventDate ? `<div><strong>Event Date:</strong> ${escapeHtml(eventDate)}</div>` : ""}
+              ${msg1 ? `<div><strong>Message 1:</strong> ${escapeHtml(msg1)}</div>` : ""}
+              ${msg2 ? `<div><strong>Message 2:</strong> ${escapeHtml(msg2)}</div>` : ""}
+            </div>
+            <div class="controls" style="margin-top:10px">
+              <button onclick="window.print()">Print / Save as PDF</button>
+            </div>
+          </header>
+
+          <table>
+            <thead><tr><th style="width:64px">S.No</th><th>Material</th><th style="width:180px">Quantity</th></tr></thead>
+            <tbody>
+              ${rowsHtml}
+            </tbody>
+          </table>
+        </body>
+        </html>
+      `);
+      newWin.document.close();
+    }
+
+    function copySelectedToClipboard(){
+      const inputs = Array.from(document.querySelectorAll("tbody input"));
+      const selected = [];
+      inputs.forEach(input => {
+        const val = input.value.trim();
+        if(val !== ""){
+          const mat = input.getAttribute("data-material") || input.closest("tr")?.querySelector(".mat-name")?.innerText;
+          const category = input.closest("section.card")?.querySelector("h2")?.innerText || "Other";
+          selected.push({category, material: mat, qty: val});
+        }
+      });
+
+      if(selected.length === 0){
+        alert("No items with quantity entered!");
+        return;
+      }
+
+      let lines = ["Category\tMaterial\tQuantity"];
+      selected.forEach(s => {
+        lines.push(`${s.category}\t${s.material}\t${s.qty}`);
+      });
+      const text = lines.join("\n");
+
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Selected items copied to clipboard (tab-separated). You can paste into Excel/Sheets.");
+      }).catch(err => {
+        console.error(err);
+        alert("Failed to copy to clipboard. You can use the browser's print to save as PDF instead.");
+      });
+    }
+  </script>
+</body>
+</html>
